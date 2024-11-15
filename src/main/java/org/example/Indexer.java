@@ -33,7 +33,7 @@ import org.apache.lucene.analysis.CharArraySet;
 public class Indexer {
 
     private static IndexWriter writer;
-    private final static Path stopwords_path = Paths.get("utils", "stopwords.txt");;
+    private final static Path stopwords_path = Paths.get("utils", "stopwords.txt");
 
     Indexer(String index_directory_path) throws IOException, TikaException, SAXException{
         Path auxiliary_index_path = Paths.get(index_directory_path);
