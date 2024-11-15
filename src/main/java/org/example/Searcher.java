@@ -39,7 +39,7 @@ public class Searcher {
     void find_query (String input_query) throws ParseException, IOException{
         Query q = new QueryParser("Content", ro_analyzer).parse(input_query);
 
-        int hitsPerPage = 10;
+        int hitsPerPage = 5;
 
         TopDocs docs = searcher.search(q, hitsPerPage);
         ScoreDoc[] hits = docs.scoreDocs;
